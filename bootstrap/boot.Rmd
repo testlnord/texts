@@ -79,6 +79,34 @@ $$
 
 ### доказательство
 
+##### A
+Если $E X^2 < \infty, s^2_n \rightarrow \sigma^2 > 0 a.s.$ Т.е. выборочная дисперсия (хоть и смещенная), но стремится к дисперсии распределения. Мы можем это как-то показать. Смотри подробности здесь <https://en.wikipedia.org/wiki/Unbiased_estimation_of_standard_deviation>.
+Следовательно для доказательства достаточно показать, что 
+
+$$
+||P^*(\sqrt{n}(\bar{Y}_n - \bar{X}_n) \leq x) - \Theta(x)|| \rightarrow 0 a.s.
+$$
+
+*ЦПТ Линденберга (Lindenberg-Feller CLT)*
+
+Пусть независимые случайные величины $X_1,\ldots ,X_n, \ldots$ определены на одном и том же вероятностном пространстве и имеют конечные [[Математическое ожидание|математические ожидания]] и [[Дисперсия случайной величины|дисперсии]]: $ \mathbb{E}[X_i] = \mu_i,\; \mathrm{D}[X_i] = \sigma^2_i$. 
+
+Пусть $S_n = \sum\limits_{i=1}^n X_i$. 
+
+Тогда $\mathbb{E}[S_n] = m_n = \sum\limits_{i=1}^n \mu_i,\; \mathrm{D}[S_n] = s_n^2 = \sum\limits_{i=1}^n \sigma_i^2$.
+
+И пусть выполняется '''условие Линдеберга''':
+: $\forall \varepsilon>0,\; \lim\limits_{n\to \infty}\sum\limits_{i=1}^n \mathbb{E}\left[\frac{(X_i-\mu_i)^2}{s_n^2}\, \mathbf{1}_{\{|X_i-\mu_i|> \varepsilon s_n \}}\right] = 0,$
+где $ \mathbf{1}_{\{|X_i-\mu_i|> \varepsilon s_n \}}$ 
+
+Тогда: $\frac{S_n-m_n}{s_n} \to N(0,1)$ по распределению при $n \to \infty$.
+
+По ЦПТ Линденберга
+
+$$
+
+$$
+
 
 ## Теорема 2
 
